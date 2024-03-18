@@ -35,6 +35,6 @@ function App() {
       {showWebcam && <WebcamComponent onClose={handleCloseWebcam} />}
     </>
   );
-}
+} //i am nub
 
 export default App;
