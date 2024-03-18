@@ -20,7 +20,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
+
+  
+
+
       <div className="eventheader row row-cols-1 row-cols-md-3 g-4 justify-content-center align-items-center">
         <div className="col text-center mb-3 mb-md-0">
           <Card src={reguser} title="Register New User" btnctn="Click Here" />
