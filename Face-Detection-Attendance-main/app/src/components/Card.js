@@ -5,6 +5,16 @@ export default function CustomCard(props) {
     return (
         <div className="col text-center mb-3 mb-md-0">
             <div className="card">
+                {/* <div class="card-inner">
+                    <div class="card-front">
+
+                        
+                    </div>
+                    <div class="card-back">
+                    <p>Back Side</p>
+                    </div>
+                </div> */}
+                
                 <img src={props.src} className="card-img-top" alt="Card" />
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>

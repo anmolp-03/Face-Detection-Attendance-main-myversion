@@ -7,6 +7,7 @@ import markp from './resources/markp.jpg';
 import reguser from './resources/reguser.jpg';
 import db from './resources/database.jpg';
 
+
 function App() {
   const [showWebcam, setShowWebcam] = useState(false); // State to toggle webcam view
 
@@ -20,25 +21,25 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-
-  
-
-
+      <Navbar />
       <div className="eventheader row row-cols-1 row-cols-md-3 g-4 justify-content-center align-items-center">
+       
         <div className="col text-center mb-3 mb-md-0">
           <Card src={reguser} title="Register New User" btnctn="Click Here" />
         </div>
+       
         <div className="col text-center mb-3 mb-md-0">
           <Card src={markp} title="Mark Attendance" btnctn="Click Here" onClick={handleMarkAttendanceClick} />
         </div>
+       
         <div className="col text-center">
           <Card src={db} title="Access Database" btnctn="Click Here" />
         </div>
+      
       </div>
       {showWebcam && <WebcamComponent onClose={handleCloseWebcam} />}
     </>
   );
-} //i am nub
+} 
 
 export default App;
